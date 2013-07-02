@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mueckenfang</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="start">START</string>
+    <string name="hello">Willkommen beim Mückenfang</string>
+    <string name="gameover">Game Over</string>
+    <string name="highscore">Highscore</string>
+    <string name="neuerRekord">Neuer Rekord! Gib deinen Namen ein:</string>
+    <string name="speichern">Speichern</string>
+    <string name="von">von</string>
+    <string name="highscores">Highscores</string>
+    <string name="placeholder">...</string>
+    <string name="noLocalHighscore">Noch kein lokaler Highscore vorhanden</string>
+
+</resources>

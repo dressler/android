@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gruen">#ABC46C</color>
+    <color name="rot">#FF0032</color>
+    <color name="blau">#A1A1FF</color>
+    <color name="schwarz">#000000</color>
+    <color name="weiss">#FFFFFF</color>
+    <color name="gelb">#FAEF1E</color>
+    <color name="transgelb">#88FAEF1E</color>
+    <color name="transgrau">#88B3B3B3</color>
+    <color name="background">#88888888</color>
+    
+</resources>

@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wurzel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hintergrund"
+    android:gravity="top"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MueckenfangActivity" >
+
+    <TextView
+        android:id="@+id/highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/platz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="@string/noLocalHighscore"
+        android:textColor="@color/gelb"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/namenseingabe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gameoverbtn"
+        android:layout_below="@+id/highscore"
+        android:layout_marginTop="21dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/neuerRekord"
+            android:textColor="@color/blau"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/spielername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/speichern"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/speichern" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/hello"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/platz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameoverbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="@string/highscore"
+        android:textColor="@color/gelb"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/namenseingabe"
+        android:layout_below="@+id/namenseingabe"
+        android:layout_marginTop="18dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/highscoreLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/highscores"
+                android:textColor="@color/gelb" />
+
+        <TextView
+            android:id="@+id/highscores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholder" />
+</LinearLayout>
+
+        
+
+    </ScrollView>
+
+    <Spinner
+        android:id="@+id/schwierigkeitsgrad"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gameoverbtn"
+        android:layout_below="@+id/points" />
+
+    <Button
+        android:id="@+id/gameoverbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/points"
+        android:layout_below="@+id/schwierigkeitsgrad"
+        android:text="@string/start" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/points"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/schwierigkeitsgrad"
+        android:padding="20dp"
+        android:src="@drawable/muecke_" />
+
+</RelativeLayout>
